@@ -5,4 +5,8 @@ langchain-openai
 langchain-groq
 langchain-core
 langchain-community
-defusedxml 
+defusedxml
+faiss-cpu
+langchain_google_genai
+pypdf
+langchain_huggingface 
