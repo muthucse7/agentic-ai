@@ -1,14 +1,32 @@
 # Agentic-ai
 
-A hands-on workspace for exploring agentic AI concepts, Pydantic data validation, and LangChain LLM orchestration.
+A hands-on workspace for exploring agentic AI concepts, Pydantic data validation, and LangChain/LangGraph LLM orchestration.
+
 
 ## Project Structure
 
 - `1-python-pydantic/`
-  - `pydantic.ipynb`: Jupyter notebook demonstrating Pydantic basics, data validation, and model usage in Python.
-- `2-lang-chain/`
-  - `.env`: Environment variables for API keys (OpenAI, Groq, LangChain).
-  - `gettingstartedlangchain.ipynb`: Jupyter notebook for getting started with LangChain, including prompt engineering, output parsers, and LLM integration.
+  - `pydantic.ipynb`: Pydantic basics, data validation, and model usage in Python.
+  - `python.ipynb`: Additional Python and Pydantic examples.
+- `2-lang-chain-basics/`
+  - `.env`: API keys for OpenAI, Groq, LangChain, etc.
+  - `gettingstartedlangchain.ipynb`: LangChain introduction, prompt engineering, output parsers, LLM integration.
+  - `2.1-DataIngestion/`
+    - `dataingestion.ipynb`: Data/document loading and ingestion workflows.
+    - `records.xml`, `speech.txt`, `syllabus.pdf`: Example data files.
+  - `2.2-DataTransformer/`
+    - `2.2.1-Recursivetextsplitter.ipynb`: Text splitting and transformation.
+    - `records.xml`, `speech.txt`, `syllabus.pdf`: Example data files.
+  - `2.3-Embeddings/`
+    - `2.3.1-embeddings.ipynb`: Embedding generation with OpenAI.
+    - `2.3.2-hugginface.ipynb`: Embedding generation with HuggingFace.
+    - `speech.txt`: Example data file.
+  - `2.4-VectorDatabase/`
+    - `FAISS/`
+      - `code.ipynb`: Vector database (FAISS) usage and retrieval-augmented generation.
+- `3-langgraph/`
+  - `langgraph_intro.ipynb`: Introduction to LangGraph for agentic workflows.
+  - `tools.ipynb`: Tool and utility demonstrations.
 
 ## Requirements
 
@@ -87,11 +105,14 @@ pip install -r file_name.txt
 
 ## Notebooks Overview
 
-- **Pydantic Notebook:**  
-  Learn about Python data validation, type enforcement, and model nesting using Pydantic.
+- **Pydantic Notebooks:**  
+  Python data validation, type enforcement, and model nesting using Pydantic.
 
-- **LangChain Notebook:**  
-  Experiment with prompt templates, output parsers (JSON, XML, YAML), and connect to LLMs (OpenAI, Groq) for advanced AI workflows.
+- **LangChain Notebooks:**  
+  Prompt templates, output parsers (JSON, XML, YAML), LLM integration (OpenAI, Groq), data ingestion, transformation, embeddings, and vector database (FAISS).
+
+- **LangGraph Notebooks:**  
+  Agentic workflow orchestration and tool usage.
 
 ## License
 
